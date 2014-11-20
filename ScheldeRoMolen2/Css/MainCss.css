@@ -1,0 +1,27 @@
+﻿body {
+    background-color:white;
+     margin:0% 0% 0% 0%;
+}
+#pictureMain{
+    width:auto;
+   border-bottom:solid thin #808080;
+   border-top:solid thin #808080;
+    overflow:auto;
+   margin-top:5%;
+    
+}
+#Image1{
+ 
+    width:100%;
+ overflow:auto;
+}
+.left{
+    width:auto;
+    float:left;
+    overflow:auto;
+}
+.right{
+    width:auto;
+    float:right;
+    overflow:auto;
+}
