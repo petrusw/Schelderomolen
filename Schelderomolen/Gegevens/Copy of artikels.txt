@@ -1,0 +1,10 @@
+﻿0;Nostalgie (echt volkoren-tarwemeel 100%);1,10
+1;Tarwemeel (gebuild op 85%);1,15
+2;Tarwebloem (gebuild op 65%);1,20
+3;Speltmeel (100%);2,05
+4;Speltmeel (raszuivere soort);3,45
+5;Speltbloem;2,45
+6;Masteluin (rogge/tarwe mengeling);1,20
+7;Meergranenmeel (6 granen+2zaden);1,60
+8;Meergranenmeel donker (Zwarte woud);1,70
+9;Khorasanmeel (KAMUT);2,85
