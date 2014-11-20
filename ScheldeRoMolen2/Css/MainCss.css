@@ -25,3 +25,7 @@
     float:right;
     overflow:auto;
 }
+#section1{
+    width:80%;
+    align-self:center;
+}

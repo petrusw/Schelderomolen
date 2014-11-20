@@ -15,8 +15,11 @@
         <div class="left"></div>
         <asp:Image ID="Image1" runat="server" ImageUrl="~/images/schelderomolen.jpg" />
         <div class="right"></div>
-    </div>
+         <section id="section1">
 
+        </section>
+    </div>
+       
     </div>
     </form>
 </body>
