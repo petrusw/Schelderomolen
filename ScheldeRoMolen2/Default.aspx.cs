@@ -11,7 +11,7 @@ namespace ScheldeRoMolen2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            LabelDatumAfhaling.Text = DateTime.Now.ToShortDateString();
         }
     }
 }
