@@ -10,7 +10,7 @@
 namespace ScheldeRoMolen2 {
     
     
-    public partial class _default {
+    public partial class Bestel {
         
         /// <summary>
         /// ScriptManager1 control.

@@ -1,8 +1,10 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ScheldeRoMolen.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="ScheldeRoMolen2._default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ScheldeRoMolen.Master" AutoEventWireup="true" CodeBehind="Bestel.aspx.cs" Inherits="ScheldeRoMolen2.Bestel" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-      <section class="inline">
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="index" runat="server">
+     <section class="inline">
             <asp:ScriptManager ID="ScriptManager1" runat="server">
 
                 
