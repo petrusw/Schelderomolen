@@ -35,8 +35,9 @@
     overflow:auto;
 }
 .bigBorder{
-    border-bottom:solid thick #4cff00;
-    /*border-top:solid thin #4cff00;*/
+    /*border-bottom:solid thick #4cff00;*/
+    border-top:solid thick #4cff00;
+    /*align-self:baseline;*/
 }
 .inline{
     /*display:inline-block;*/
@@ -61,25 +62,27 @@
     position:fixed;
     top:30px;
     width:100%;
-    height:30px;
+    height:4%;
     display:inline;
     background-color:#100f0f;
     opacity:0.5;
     align-content:center;
     align-items:center;
     text-align:center;
-    
+    margin:0 0 0 0 ;
 }
 .button{
     text-decoration:none;
-    height:30px;
-    width:150px;
-    align-content:center;
-    align-items:center;
-    text-align:center;
-    vertical-align:middle;
+   
+    /*align-content:center;
+    align-items:center;*/
+    text-align: center;
+    vertical-align:  middle;
     background-color:#100f0f;
     opacity:0.5;
+    margin-bottom:0;
+    font-size:100%;
+    margin:0 0 0 0;
 }
 .textColorH3{
     color:white;
@@ -92,4 +95,9 @@
 }
 #indexText{
     text-align:justify;
+}
+.bigBorder2{
+    /*border-bottom:solid thick #4cff00;*/
+    border-top:solid thick #100f0f;
+    /*align-self:baseline;*/
 }

@@ -12,6 +12,9 @@ namespace ScheldeRoMolen2
         protected void Page_Load(object sender, EventArgs e)
         {
             LabelDatumAfhaling.Text = DateTime.Now.ToShortDateString();
+            LabelReqFieldEmail.Text = "*";
+            LabelReqFieldNaam.Text = "*";
+            LabelReqFieldTel.Text = "*";
         }
     }
 }

@@ -17,31 +17,33 @@
                              
                          </section>
                          <section class="center">
-                             <div>
-                                 <h3>Afgehaald door : </h3>
+                             
+                                 <h3>Afgehaald door : 
+                             
                                  <asp:TextBox ID="TextBoxNaam" runat="server"></asp:TextBox>
-                                 <h3>
+                                 
                                      <asp:Label ID="LabelReqFieldNaam" runat="server"  ></asp:Label>
 
-                                 </h3>
-                             </div>
-                            <div>
-                                <h3>Email : </h3> 
-                                <asp:TextBox ID="TextBoxEmail" runat="server"></asp:TextBox>
-                                <h3>
-                                    <asp:Label ID="LabelReqFieldEmail" runat="server" ></asp:Label>
+                               
+                             </h3>
+                            
+                                <h3 class="left">Email : 
 
-                                </h3>
+                                <asp:TextBox   ID="TextBoxEmail" runat="server" ></asp:TextBox>
+                                
+                                    <asp:Label   ID="LabelReqFieldEmail" runat="server" ></asp:Label>
+                                 </h3>
+                                
                             
-                            </div>
+                           
                             
-                               <div>
-                                 <h3> Tel/Gsm: </h3>    
+                               
+                                 <h3> Tel/Gsm:    
                                  <asp:TextBox ID="TextBoxTel" runat="server"></asp:TextBox>
-                                 <h3>
+                                 
                                     <asp:Label ID="LabelReqFieldTel" runat="server" ></asp:Label>
                                  </h3>
-                               </div>
+                               
                                
                              
                             
