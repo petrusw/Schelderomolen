@@ -1,24 +1,8 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ScheldeRoMolen2.Default" %>
-
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Schelderomolen</title>
-    <link  rel="stylesheet" type="text/css" href="Css/MainCss.css" />
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="scripts/scriptMain.js"  type="text/javascript"></script>
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    <section id="pictureMain">
-        
-        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/schelderomolen.jpg" />
-       
-        
-    </section>
-        <section class="inline">
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/ScheldeRoMolen.Master" AutoEventWireup="true" CodeBehind="default.aspx.cs" Inherits="ScheldeRoMolen2._default" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+      <section class="inline">
             <asp:ScriptManager ID="ScriptManager1" runat="server">
 
                 
@@ -81,8 +65,4 @@
            
            
         </section>
-       
-    </div>
-    </form>
-</body>
-</html>
+</asp:Content>
