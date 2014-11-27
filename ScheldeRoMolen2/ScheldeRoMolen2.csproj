@@ -58,6 +58,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Bestel.aspx" />
+    <Content Include="Contact.aspx" />
+    <Content Include="content\ContactInfo.txt" />
     <Content Include="content\indexText.txt" />
     <Content Include="index.aspx" />
     <Content Include="ScheldeRoMolen.Master" />
@@ -81,6 +83,13 @@
     </Compile>
     <Compile Include="Bestel.aspx.designer.cs">
       <DependentUpon>Bestel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
     <Compile Include="index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

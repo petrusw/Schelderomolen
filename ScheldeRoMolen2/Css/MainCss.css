@@ -62,7 +62,9 @@
     position:fixed;
     top:30px;
     width:100%;
-    height:4%;
+    /*height:30px;*/
+    min-height:30px;
+
     display:inline;
     background-color:#100f0f;
     opacity:0.5;
@@ -73,16 +75,11 @@
 }
 .button{
     text-decoration:none;
-   
-    /*align-content:center;
-    align-items:center;*/
     text-align: center;
     vertical-align:  middle;
     background-color:#100f0f;
     opacity:0.5;
-    margin-bottom:0;
     font-size:100%;
-    margin:0 0 0 0;
 }
 .textColorH3{
     color:white;
@@ -97,7 +94,14 @@
     text-align:justify;
 }
 .bigBorder2{
-    /*border-bottom:solid thick #4cff00;*/
     border-top:solid thick #100f0f;
-    /*align-self:baseline;*/
+   
+}
+#MainContact{
+  margin-left:auto;
+  margin-right:auto;
+  width:40%;
+}
+#Panelcontact{
+
 }
