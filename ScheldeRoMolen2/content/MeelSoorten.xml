@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--<xs:Elements xmlns:xs="http://schemas.microsoft.com/sharepoint/">-->
+
+<!--  http://www.w3schools.com/xml/xml_schema.asp Daar staat de uitleg hoe je het moet klaarspelen!!!!!!! -->
+
+
+<!-- Dit is een DDT shema !!!!-->
+<!DOCTYPE Lijst[
+  <!ELEMENT Lijst (Molen)>
+  <!ELEMENT Molen (Naam,Prijs)>
+  <!ELEMENT Naam (#PCDATA)>
+  <!ELEMENT Prijs (#PCDATA)>
+]>
+
+
+<Lijst>
+  <Molen>
+
+    <Naam>Zacht Wit</Naam>
+    <Prijs>5.2</Prijs>
+
+  </Molen>
+  
+</Lijst>
+
+
+<!--</xs:Elements>-->
+
