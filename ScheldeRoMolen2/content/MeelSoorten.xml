@@ -14,13 +14,24 @@
 
 
 <Lijst>
-  <Molen>
+  <Molen id="0">
 
     <Naam>Zacht Wit</Naam>
     <Prijs>5.2</Prijs>
 
   </Molen>
-  
+  <Molen id="1">
+
+    <Naam>Grof Wit</Naam>
+    <Prijs>4.0</Prijs>
+
+  </Molen>
+  <Molen id="2">
+
+    <Naam>Zacht Gijs</Naam>
+    <Prijs>3.6</Prijs>
+
+  </Molen>
 </Lijst>
 
 
