@@ -59,13 +59,31 @@
   <ItemGroup>
     <Content Include="Bestel.aspx" />
     <Content Include="Contact.aspx" />
+    <Content Include="content\bootstrap-theme.css" />
+    <Content Include="content\bootstrap-theme.min.css" />
+    <Content Include="content\bootstrap.css" />
+    <Content Include="content\bootstrap.min.css" />
     <Content Include="content\ContactInfo.txt" />
     <Content Include="content\indexText.txt" />
+    <Content Include="content\Textgewicht.txt" />
     <Content Include="Default.aspx" />
     <Content Include="content\MeelSoorten.xml" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="ScheldeRoMolen.Master" />
+    <Content Include="packages.config" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="content\bootstrap-theme.css.map" />
+    <Content Include="content\bootstrap.css.map" />
     <None Include="Properties\PublishProfiles\scheldemolen - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\scheldemolen - Web Deploy.pubxml" />
+    <None Include="scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="scripts\bootstrap.min.js" />
+    <Content Include="scripts\jquery-1.9.1.js" />
+    <Content Include="scripts\jquery-1.9.1.min.js" />
+    <Content Include="scripts\jquery-1.9.1.min.map" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -76,6 +94,7 @@
   <ItemGroup>
     <Content Include="Css\MainCss.css" />
     <Content Include="images\schelderomolen.jpg" />
+    <Content Include="scripts\npm.js" />
     <Content Include="scripts\scriptMain.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -87,6 +106,7 @@
     <Compile Include="Bestel.aspx.designer.cs">
       <DependentUpon>Bestel.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Bestelling.cs" />
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

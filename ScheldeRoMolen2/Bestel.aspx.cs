@@ -11,6 +11,7 @@ namespace ScheldeRoMolen2
 {
     public partial class Bestel : System.Web.UI.Page
     {
+        List<Bestelling> bestelling = new List<Bestelling>();
         protected void Page_Load(object sender, EventArgs e)
         {
             LabelDatumAfhaling.Text = DateTime.Now.ToShortDateString();
@@ -19,20 +20,19 @@ namespace ScheldeRoMolen2
             LabelReqFieldTel.Text = "*";
             PanelType.Visible = false;
             PanelKlant.Visible = true;
-            readXml();
+            if (!Page.IsPostBack)
+            {
+                readXml();
+                readTxt();
+                //bestelling = new List<Bestelling>();
+            }
+            
         }
 
         protected void ButtonVolgende_Click(object sender, EventArgs e)
         {
-            PanelType.Visible = true;
-            PanelKlant.Visible = false;
-            //Zet eerste letter om in hoofdletter
-            string Naam = TextBoxNaam.Text;
-            string NaamUpper = char.ToUpper(Naam[0]) + Naam.Substring(1);
-            // geeft de info weer op de pagina
-            LabelKlantInfo.Text ="Beste, "+ NaamUpper /*+ " <br/>" + TextBoxEmail.Text + "<br/> " 
-                + TextBoxTel.Text+"<br/>"+ LabelDatumAfhaling.Text*/;
 
+            clickonvolgende();
 
         }
 
@@ -61,6 +61,56 @@ namespace ScheldeRoMolen2
               }
               
           }
+        }
+        private void readTxt()
+        {
+            string path = Server.MapPath("~/content/Textgewicht.txt");// server.mappath is nodig voor de juiste relative link te leggen naar de file!!!
+            //string content;
+            List<char> kg = new List<char>();
+            using (StreamReader textReader = new StreamReader(path))
+            {
+                //content = textReader.ReadToEnd();
+                foreach (var line in textReader.ReadToEnd())
+                {
+                    kg.Add(line);
+                }
+            }
+            //ggggggggggggggggggggggggggggggggggggggggggggggggggg
+
+            //indexText.InnerText = content;
+            foreach(var cha in kg)
+            {
+                DropDownListGewigt.Items.Add(cha.ToString());
+            }
+        }
+        private void voegBestellingToe()
+        {
+            string soort = DropDownListSoort.SelectedValue;
+            int v = DropDownListGewigt.SelectedIndex +1 ;
+            int kg = v;
+            //Bestelling b = new Bestelling(soort, kg);
+            bestelling.Add(new Bestelling() { Soort=soort,KG=kg,Datum=DateTime.Now});
+        }
+
+        protected void ButtonBestelToevoegen_Click(object sender, EventArgs e)
+        {
+            voegBestellingToe();
+            foreach(var be in bestelling)
+            {
+                Label1bestellingen.Text += be.Soort + " " + be.KG + "kg " + be.Datum.ToShortDateString() + "<br/>";
+            }
+            clickonvolgende();
+        }
+        private void clickonvolgende()
+        {
+            PanelType.Visible = true;
+            PanelKlant.Visible = false;
+            //Zet eerste letter om in hoofdletter
+            string Naam = TextBoxNaam.Text;
+            string NaamUpper = char.ToUpper(Naam[0]) + Naam.Substring(1);
+            // geeft de info weer op de pagina
+            LabelKlantInfo.Text = "Beste, " + NaamUpper /*+ " <br/>" + TextBoxEmail.Text + "<br/> " 
+                + TextBoxTel.Text+"<br/>"+ LabelDatumAfhaling.Text*/;
         }
     }
 }
