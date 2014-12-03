@@ -88,7 +88,17 @@
                        <h3 class="center">
                            <asp:Label ID="Label1bestellingen" runat="server" ></asp:Label>
                        </h3>
+                          <h3 class="center">
+                                <asp:Button ID="ButtonBestel" runat="server" Text="Bestel" OnClick="ButtonBestel_Click" />
+                                <br />
+                                 
+                            </h3>  
+                           
                       </asp:Panel>
+                        <asp:Panel ID="PanelEindeBestelling" runat="server">
+                            <h3 class="center"> <asp:Label ID="LabeleindeBestelling" runat="server"  Visible="false"></asp:Label></h3>
+                           
+                        </asp:Panel>
                         </ContentTemplate>
                     <Triggers>
                         <asp:AsyncPostBackTrigger ControlID="ButtonVolgende" />

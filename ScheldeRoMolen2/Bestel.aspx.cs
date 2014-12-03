@@ -112,5 +112,13 @@ namespace ScheldeRoMolen2
             LabelKlantInfo.Text = "Beste, " + NaamUpper /*+ " <br/>" + TextBoxEmail.Text + "<br/> " 
                 + TextBoxTel.Text+"<br/>"+ LabelDatumAfhaling.Text*/;
         }
+
+        protected void ButtonBestel_Click(object sender, EventArgs e)
+        {
+            clickonvolgende();
+            PanelType.Visible = false;
+            LabeleindeBestelling.Visible = true;
+            LabeleindeBestelling.Text = "Bedankt voor uw bestelling! ";
+        }
     }
 }
