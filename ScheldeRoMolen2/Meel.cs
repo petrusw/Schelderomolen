@@ -21,7 +21,7 @@ namespace ScheldeRoMolen2
             set { prijsValue = value; }
         }
 
-        public void Meel(string naam, decimal prijs)
+        public Meel(string naam, decimal prijs)
         {
             Naam = naam;
             Prijs = prijs;
