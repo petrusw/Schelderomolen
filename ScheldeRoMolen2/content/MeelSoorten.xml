@@ -28,7 +28,25 @@
   </Molen>
   <Molen >
 
-    <Naam>Zacht Gijs</Naam>
+    <Naam>Zacht Grijs</Naam>
+    <Prijs>3.6</Prijs>
+
+  </Molen>
+  <Molen >
+
+    <Naam>Grof Grijs</Naam>
+    <Prijs>3.6</Prijs>
+
+  </Molen>
+  <Molen >
+
+    <Naam>Boeren Grijs</Naam>
+    <Prijs>3.6</Prijs>
+
+  </Molen>
+  <Molen >
+
+    <Naam>Donker Grijs</Naam>
     <Prijs>3.6</Prijs>
 
   </Molen>
