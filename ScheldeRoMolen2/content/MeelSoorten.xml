@@ -5,28 +5,28 @@
 
 
 <!-- Dit is een DDT shema !!!!-->
-<!DOCTYPE Lijst[
+<!--<!DOCTYPE Lijst[
   <!ELEMENT Lijst (Molen)>
   <!ELEMENT Molen (Naam,Prijs)>
   <!ELEMENT Naam (#PCDATA)>
   <!ELEMENT Prijs (#PCDATA)>
-]>
+]>-->
 
 
 <Lijst>
-  <Molen id="0">
+  <Molen >
 
     <Naam>Zacht Wit</Naam>
     <Prijs>5.2</Prijs>
 
   </Molen>
-  <Molen id="1">
+  <Molen >
 
     <Naam>Grof Wit</Naam>
     <Prijs>4.0</Prijs>
 
   </Molen>
-  <Molen id="2">
+  <Molen >
 
     <Naam>Zacht Gijs</Naam>
     <Prijs>3.6</Prijs>

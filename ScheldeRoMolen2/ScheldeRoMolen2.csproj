@@ -61,9 +61,11 @@
     <Content Include="Contact.aspx" />
     <Content Include="content\ContactInfo.txt" />
     <Content Include="content\indexText.txt" />
-    <Content Include="index.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="content\MeelSoorten.xml" />
     <Content Include="ScheldeRoMolen.Master" />
+    <None Include="Properties\PublishProfiles\scheldemolen - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\scheldemolen - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -92,12 +94,12 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="Meel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

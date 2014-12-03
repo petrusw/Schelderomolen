@@ -15,7 +15,7 @@
     <form id="form1" runat="server">
          <div >
            <section id="topBar">
-                <asp:HyperLink CssClass="button" ID="HyperLinkHome" runat="server" NavigateUrl="~/index.aspx" ForeColor="White" Width="15%" Height="100%">Home</asp:HyperLink>
+                <asp:HyperLink CssClass="button" ID="HyperLinkHome" runat="server" NavigateUrl="~/Default.aspx" ForeColor="White" Width="15%" Height="100%">Home</asp:HyperLink>
                <asp:HyperLink  CssClass="button" ID="HyperLinkBestel" runat="server" Text="Bestel"   Width="15%" Height="100%" NavigateUrl="~/Bestel.aspx" ForeColor="White" >
                    <%--<h3 class="topBarButton" >Bestel</h3>--%>
                </asp:HyperLink>
