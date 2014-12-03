@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ScheldeRoMolen.master.cs" Inherits="ScheldeRoMolen2.ScheldeRoMolen" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+     <link  rel="stylesheet" type="text/css" href="Css/MainCss.css" />
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="scripts/scriptMain.js"  type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         <div >
+           <section id="topBar">
+                <asp:HyperLink CssClass="button" ID="HyperLinkHome" runat="server" NavigateUrl="~/index.aspx" ForeColor="White" Width="15%" Height="100%">Home</asp:HyperLink>
+               <asp:HyperLink  CssClass="button" ID="HyperLinkBestel" runat="server" Text="Bestel"   Width="15%" Height="100%" NavigateUrl="~/Bestel.aspx" ForeColor="White" >
+                   <%--<h3 class="topBarButton" >Bestel</h3>--%>
+               </asp:HyperLink>
+                <asp:HyperLink CssClass="button" ID="HyperLink1" runat="server"  Width="15%" Height="100%" NavigateUrl="~/Contact.aspx" ForeColor="White" >Contact</asp:HyperLink>
+          <%-- <asp:HyperLink CssClass="button" ID="HyperLink2" runat="server"  Width="15%" Height="100%" NavigateUrl="~/index.aspx" ForeColor="White" >knop4</asp:HyperLink>
+                <asp:HyperLink CssClass="button" ID="HyperLink3" runat="server"  Width="15%" Height="100%" NavigateUrl="~/index.aspx" ForeColor="White" >knop5</asp:HyperLink>
+                --%></section>
+           
+       </div>
+         <section id="pictureMain">
+        
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/images/schelderomolen.jpg" />
+      
+        
+    </section>
+      
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <div>
+   
+       
+    </div>
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="index" runat="server">
+
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
