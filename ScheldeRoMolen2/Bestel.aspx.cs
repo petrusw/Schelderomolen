@@ -103,15 +103,59 @@ namespace ScheldeRoMolen2
         }
         private void clickonvolgende()
         {
-            PanelType.Visible = true;
-            PanelKlant.Visible = false;
+          
             //Zet eerste letter om in hoofdletter
             string Naam = TextBoxNaam.Text;
-            string NaamUpper = char.ToUpper(Naam[0]) + Naam.Substring(1);
-            // geeft de info weer op de pagina
-            LabelKlantInfo.Text = "Beste, " + NaamUpper /*+ " <br/>" + TextBoxEmail.Text + "<br/> " 
+            if (Naam != string.Empty)
+            {
+                
+                LabelReqFieldNaam.Visible = false;
+                string NaamUpper = char.ToUpper(Naam[0]) + Naam.Substring(1);
+                // geeft de info weer op de pagina
+                LabelKlantInfo.Text = "Beste, " + NaamUpper /*+ " <br/>" + TextBoxEmail.Text + "<br/> " 
                 + TextBoxTel.Text+"<br/>"+ LabelDatumAfhaling.Text*/;
-        }
+            }
+            else
+            {
+                LabelReqFieldNaam.Text = "geef naam in!";
+                LabelReqFieldNaam.Visible = true;
+            }
+               
+
+            if (TextBoxEmail.Text != string.Empty)
+            {
+                LabelReqFieldEmail.Visible = false;
+               
+            }
+            else
+            {
+                LabelReqFieldEmail.Text = "geef Email in!";
+                LabelReqFieldEmail.Visible = true;
+               
+            }
+            if(TextBoxTel.Text != string.Empty)
+            {
+                LabelReqFieldTel.Visible = false;
+                
+            }
+            else
+            {
+                LabelReqFieldTel.Visible = true;
+                LabelReqFieldTel.Text = "geef tel nr in!";
+            }
+            if (TextBoxNaam.Text != string.Empty && TextBoxEmail.Text != string.Empty && TextBoxTel.Text != string.Empty)
+            {
+                PanelType.Visible = true;
+                PanelKlant.Visible = false;
+            }
+           
+
+            }
+    
+                
+           
+           
+           
 
         protected void ButtonBestel_Click(object sender, EventArgs e)
         {

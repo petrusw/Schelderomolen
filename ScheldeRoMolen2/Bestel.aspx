@@ -23,7 +23,7 @@
                              <h3 class="right">
                                  <asp:TextBox ID="TextBoxNaam" runat="server"  ></asp:TextBox>
                                  
-                                     <asp:Label ID="LabelReqFieldNaam" runat="server"   ></asp:Label>
+                                     <asp:Label ID="LabelReqFieldNaam" runat="server" ForeColor="Red"   ></asp:Label>
 
                                
                              </h3>
@@ -32,7 +32,7 @@
                              <h3 class="right">
                                 <asp:TextBox   ID="TextBoxEmail" runat="server" ></asp:TextBox>
                                 
-                                    <asp:Label   ID="LabelReqFieldEmail" runat="server" ></asp:Label>
+                                    <asp:Label   ID="LabelReqFieldEmail" runat="server" ForeColor="Red" ></asp:Label>
                                  </h3>
                                 
                             
@@ -43,7 +43,7 @@
                              <h3 class="right">
                                  <asp:TextBox ID="TextBoxTel" runat="server"></asp:TextBox>
                                  
-                                    <asp:Label ID="LabelReqFieldTel" runat="server" ></asp:Label>
+                                    <asp:Label ID="LabelReqFieldTel" runat="server" ForeColor="Red" ></asp:Label>
                                  </h3>
                                
                                <h3 class="left">
