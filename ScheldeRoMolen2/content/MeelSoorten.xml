@@ -16,30 +16,64 @@
 <Lijst>
   <Molen >
 
-    <Naam>tarwe</Naam>
+    <Naam>Nostalgie</Naam>
     <Prijs>5.2</Prijs>
 
   </Molen>
   <Molen >
 
-    <Naam>rogge</Naam>
+    <Naam>Gebuild tarwemeel 85%</Naam>
     <Prijs>4.0</Prijs>
 
   </Molen>
   <Molen >
 
-    <Naam>spelt</Naam>
+    <Naam>speltbloem</Naam>
     <Prijs>3.6</Prijs>
 
   </Molen>
   <Molen >
 
-    <Naam>khorasans</Naam>
+    <Naam>khorasanmeel</Naam>
     <Prijs>3.6</Prijs>
 
   </Molen>
-  
+  <Molen >
 
+    <Naam>speltmeel</Naam>
+    <Prijs>3.6</Prijs>
+
+  </Molen>
+  <Molen >
+
+    <Naam>tarwebloem 65%</Naam>
+    <Prijs>3.6</Prijs>
+
+  </Molen>
+  <Molen >
+
+    <Naam>Roggemeel</Naam>
+    <Prijs>3.6</Prijs>
+
+  </Molen>
+  <Molen >
+
+    <Naam>Masteluin</Naam>
+    <Prijs>3.6</Prijs>
+
+  </Molen>
+  <Molen >
+
+    <Naam>Meergranenmeel</Naam>
+    <Prijs>3.6</Prijs>
+
+  </Molen>
+<Molen >
+
+    <Naam>Meergranen donker</Naam>
+    <Prijs>3.6</Prijs>
+
+  </Molen>
    
 </Lijst>
 
