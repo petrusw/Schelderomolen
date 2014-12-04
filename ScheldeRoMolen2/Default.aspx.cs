@@ -5,6 +5,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using ScheldeRoMolen2;
 
 namespace ScheldeRoMolen2
 {
@@ -16,11 +17,18 @@ namespace ScheldeRoMolen2
              string content;
              using(   StreamReader textReader = new StreamReader(path))
              {
-               content = textReader.ReadToEnd();
+               content = textReader.ReadLine();
+               string contentWithLineBreaks = "";
+                 while(content != null)
+                 {
+                     contentWithLineBreaks += content + "<br/>";
+                     content = textReader.ReadLine();
+                 }
+                 content = contentWithLineBreaks;                 
              }
-            //ggggggggggggggggggggggggggggggggggggggggggggggggggg
-
-             indexText.InnerText = content;
+              
+             
+             indexText.InnerHtml = content;
 
         }
     }
