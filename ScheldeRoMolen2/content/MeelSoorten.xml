@@ -16,40 +16,31 @@
 <Lijst>
   <Molen >
 
-    <Naam>Zacht Wit</Naam>
+    <Naam>tarwe</Naam>
     <Prijs>5.2</Prijs>
 
   </Molen>
   <Molen >
 
-    <Naam>Grof Wit</Naam>
+    <Naam>rogge</Naam>
     <Prijs>4.0</Prijs>
 
   </Molen>
   <Molen >
 
-    <Naam>Zacht Grijs</Naam>
+    <Naam>spelt</Naam>
     <Prijs>3.6</Prijs>
 
   </Molen>
   <Molen >
 
-    <Naam>Grof Grijs</Naam>
+    <Naam>khorasans</Naam>
     <Prijs>3.6</Prijs>
 
   </Molen>
-  <Molen >
+  
 
-    <Naam>Boeren Grijs</Naam>
-    <Prijs>3.6</Prijs>
-
-  </Molen>
-  <Molen >
-
-    <Naam>Donker Grijs</Naam>
-    <Prijs>3.6</Prijs>
-
-  </Molen>
+   
 </Lijst>
 
 
