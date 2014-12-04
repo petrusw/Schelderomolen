@@ -78,6 +78,7 @@
     <Content Include="content\bootstrap.css.map" />
     <None Include="Properties\PublishProfiles\scheldemolen - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\scheldemolen - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\scheldemolen.pubxml" />
     <None Include="scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="scripts\bootstrap.js" />
     <Content Include="scripts\bootstrap.min.js" />
