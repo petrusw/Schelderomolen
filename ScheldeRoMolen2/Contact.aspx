@@ -21,7 +21,8 @@
                 <h3 class="center">
                     <asp:Button ID="ButtonVerzend" runat="server" Text="Verzend" OnClick="ButtonVerzend_Click" />
                 </h3>
-                
+                <br />
+                <br /><br /><br />
             </asp:Panel>
                 
                       <asp:Panel ID="PanelContactPreview" runat="server">

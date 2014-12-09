@@ -135,3 +135,6 @@
     display:inline;
     color:white;
 }
+#collapse{
+    visibility:collapse;
+}
