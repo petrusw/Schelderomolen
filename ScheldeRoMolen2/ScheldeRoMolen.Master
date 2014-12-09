@@ -44,6 +44,9 @@
         <asp:ContentPlaceHolder ID="index" runat="server">
 
         </asp:ContentPlaceHolder>
+        <section   id="footer" class="center">
+            <p>developed by Petrus</p>
+        </section>
     </div>
     </form>
 </body>
