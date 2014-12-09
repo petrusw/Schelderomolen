@@ -88,8 +88,8 @@
                         <asp:DropDownList ID="DropDownListSoort" runat="server"></asp:DropDownList>
                         <asp:DropDownList ID="DropDownListGewigt" runat="server"></asp:DropDownList>
                     </h3>
-                            <h3 class="center">
-                                <asp:Button ID="ButtonBestelToevoegen" runat="server" Text="voeg bestelling toe" OnClick="ButtonBestelToevoegen_Click" />
+                            <h3 class="center ">
+                                <asp:Button ID="ButtonBestelToevoegen" runat="server" Text="voeg bestelling toe" OnClick="ButtonBestelToevoegen_Click" /><br />
                             </h3>
                        <h3 class="center">
                            <asp:Label ID="Label1bestellingen" runat="server" ></asp:Label>

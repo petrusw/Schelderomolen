@@ -4,12 +4,15 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
       
 </asp:Content>
-<asp:Content runat="server" ID="Content3" ContentPlaceHolderID="index">
-    <section >
+<asp:Content runat="server" ID="ContentText" ContentPlaceHolderID="index"  >
+    <section   >
          <h1 class="center">Wie zijn wij</h1>
         <br />
         <br />
-        <h3 id="indexText" runat="server"></h3>
+        <div class="MainText">
+        <h3 id="indexText"  runat="server" ></h3>
+
+        </div>
     </section>
   
 </asp:Content>
