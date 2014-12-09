@@ -45,7 +45,7 @@
 
         </asp:ContentPlaceHolder>
         <section   id="footer" class="center">
-            <p>developed by Petrus</p>
+            <p>Developed by Petrus</p>
         </section>
     </div>
     </form>

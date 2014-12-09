@@ -131,6 +131,7 @@
     <Compile Include="ScheldeRoMolen.Master.designer.cs">
       <DependentUpon>ScheldeRoMolen.Master</DependentUpon>
     </Compile>
+    <Compile Include="SendMailTo.cs" />
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>

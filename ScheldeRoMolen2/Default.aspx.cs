@@ -28,7 +28,7 @@ namespace ScheldeRoMolen2
              }
               
              
-             indexText.InnerHtml = content;
+             indexText.InnerHtml = content +"<br/>"+"<br/>"+"<br/>";
 
         }
     }

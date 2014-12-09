@@ -12,6 +12,7 @@ namespace ScheldeRoMolen2
     public partial class Bestel : System.Web.UI.Page
     {
         List<Bestelling> bestelling = new List<Bestelling>();
+        string bericht = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             LabelDatumAfhaling.Text = DateTime.Now.ToShortDateString();
@@ -98,6 +99,9 @@ namespace ScheldeRoMolen2
             foreach(var be in bestelling)
             {
                 Label1bestellingen.Text += be.Soort + " " + be.KG + "kg " + be.Datum.ToShortDateString() + "<br/>";
+
+                bericht += TextBoxNaam.Text + "<br/><br/>";
+                
             }
             clickonvolgende();
         }
@@ -115,38 +119,12 @@ namespace ScheldeRoMolen2
                 LabelKlantInfo.Text = "Beste, " + NaamUpper /*+ " <br/>" + TextBoxEmail.Text + "<br/> " 
                 + TextBoxTel.Text+"<br/>"+ LabelDatumAfhaling.Text*/;
             }
-            //else
-            //{
-            //    LabelReqFieldNaam.Text = "geef naam in!";
-            //    LabelReqFieldNaam.Visible = true;
-            //}
-               
-
-            //if (TextBoxEmail.Text != string.Empty)
-            //{
-            //    LabelReqFieldEmail.Visible = false;
-               
-            //}
-            //else
-            //{
-            //    LabelReqFieldEmail.Text = "geef Email in!";
-            //    LabelReqFieldEmail.Visible = true;
-               
-            //}
-            //if(TextBoxTel.Text != string.Empty)
-            //{
-            //    LabelReqFieldTel.Visible = false;
-                
-            //}
-            //else
-            //{
-            //    LabelReqFieldTel.Visible = true;
-            //    LabelReqFieldTel.Text = "geef tel nr in!";
-            //}
+            
             if (TextBoxNaam.Text != string.Empty && TextBoxEmail.Text != string.Empty && TextBoxTel.Text != string.Empty)
             {
                 PanelType.Visible = true;
                 PanelKlant.Visible = false;
+                bericht += Label1bestellingen.Text;
             }
            
 
@@ -156,13 +134,25 @@ namespace ScheldeRoMolen2
            
            
            
-
+        //de info om dit te doen heb ik van
+        //http://www.c-sharpcorner.com/UploadFile/sourabh_mishra1/sending-an-e-mail-using-Asp-Net-with-C-Sharp/
+        //en gebruik de azure extension SendGrid vanuit de marketplace deze is ook gratis!!!
         protected void ButtonBestel_Click(object sender, EventArgs e)
         {
+          
+
+            //foreach (var bestelItems in bestelling)
+            //{
+            //    bericht += " " + bestelItems.Soort + " " + bestelItems.KG + " " + bestelItems.Datum + "<br/>";
+            //}
             clickonvolgende();
             PanelType.Visible = false;
             LabeleindeBestelling.Visible = true;
             LabeleindeBestelling.Text = "Bedankt voor uw bestelling! ";
+          
+            SendMailTo NieuweEmail = new SendMailTo(TextBoxEmail.Text, bericht);
+
+            NieuweEmail.Send();
         }
     }
 }
