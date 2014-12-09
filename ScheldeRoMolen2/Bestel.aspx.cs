@@ -15,9 +15,9 @@ namespace ScheldeRoMolen2
         protected void Page_Load(object sender, EventArgs e)
         {
             LabelDatumAfhaling.Text = DateTime.Now.ToShortDateString();
-            LabelReqFieldEmail.Text = "*";
-            LabelReqFieldNaam.Text = "*";
-            LabelReqFieldTel.Text = "*";
+            //LabelReqFieldEmail.Text = "*";
+            //LabelReqFieldNaam.Text = "*";
+            //LabelReqFieldTel.Text = "*";
             PanelType.Visible = false;
             PanelKlant.Visible = true;
             if (!Page.IsPostBack)
@@ -75,7 +75,7 @@ namespace ScheldeRoMolen2
                     kg.Add(line);
                 }
             }
-            //ggggggggggggggggggggggggggggggggggggggggggggggggggg
+            
 
             //indexText.InnerText = content;
             foreach(var cha in kg)
@@ -109,40 +109,40 @@ namespace ScheldeRoMolen2
             if (Naam != string.Empty)
             {
                 
-                LabelReqFieldNaam.Visible = false;
-                string NaamUpper = char.ToUpper(Naam[0]) + Naam.Substring(1);
+            //    //LabelReqFieldNaam.Visible = false;
+            string NaamUpper = char.ToUpper(Naam[0]) + Naam.Substring(1);
                 // geeft de info weer op de pagina
                 LabelKlantInfo.Text = "Beste, " + NaamUpper /*+ " <br/>" + TextBoxEmail.Text + "<br/> " 
                 + TextBoxTel.Text+"<br/>"+ LabelDatumAfhaling.Text*/;
             }
-            else
-            {
-                LabelReqFieldNaam.Text = "geef naam in!";
-                LabelReqFieldNaam.Visible = true;
-            }
+            //else
+            //{
+            //    LabelReqFieldNaam.Text = "geef naam in!";
+            //    LabelReqFieldNaam.Visible = true;
+            //}
                
 
-            if (TextBoxEmail.Text != string.Empty)
-            {
-                LabelReqFieldEmail.Visible = false;
+            //if (TextBoxEmail.Text != string.Empty)
+            //{
+            //    LabelReqFieldEmail.Visible = false;
                
-            }
-            else
-            {
-                LabelReqFieldEmail.Text = "geef Email in!";
-                LabelReqFieldEmail.Visible = true;
+            //}
+            //else
+            //{
+            //    LabelReqFieldEmail.Text = "geef Email in!";
+            //    LabelReqFieldEmail.Visible = true;
                
-            }
-            if(TextBoxTel.Text != string.Empty)
-            {
-                LabelReqFieldTel.Visible = false;
+            //}
+            //if(TextBoxTel.Text != string.Empty)
+            //{
+            //    LabelReqFieldTel.Visible = false;
                 
-            }
-            else
-            {
-                LabelReqFieldTel.Visible = true;
-                LabelReqFieldTel.Text = "geef tel nr in!";
-            }
+            //}
+            //else
+            //{
+            //    LabelReqFieldTel.Visible = true;
+            //    LabelReqFieldTel.Text = "geef tel nr in!";
+            //}
             if (TextBoxNaam.Text != string.Empty && TextBoxEmail.Text != string.Empty && TextBoxTel.Text != string.Empty)
             {
                 PanelType.Visible = true;

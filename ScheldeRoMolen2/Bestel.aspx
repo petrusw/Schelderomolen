@@ -23,7 +23,10 @@
                              <h3 class="right">
                                  <asp:TextBox ID="TextBoxNaam" runat="server"  ></asp:TextBox>
                                  
-                                     <asp:Label ID="LabelReqFieldNaam" runat="server" ForeColor="Red"   ></asp:Label>
+                                    <%-- <asp:Label ID="LabelReqFieldNaam" runat="server" ForeColor="Red"   ></asp:Label>--%>
+
+                               
+                                 <asp:RequiredFieldValidator ID="RequiredFieldValidatorNaam"  ControlToValidate="TextBoxNaam" runat="server" Text="*" ErrorMessage="vul naam in !" ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
 
                                
                              </h3>
@@ -32,7 +35,9 @@
                              <h3 class="right">
                                 <asp:TextBox   ID="TextBoxEmail" runat="server" ></asp:TextBox>
                                 
-                                    <asp:Label   ID="LabelReqFieldEmail" runat="server" ForeColor="Red" ></asp:Label>
+                                  <%--  <asp:Label   ID="LabelReqFieldEmail" runat="server" ForeColor="Red" ></asp:Label>--%>
+                                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" ControlToValidate="TextBoxEmail" ForeColor="Red" Text="*" runat="server" Display="Dynamic"></asp:RequiredFieldValidator>
+                                 <asp:RegularExpressionValidator ID="RegularExpressionValidatorEmail" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="RegularExpressionValidator" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" Display="Dynamic">*</asp:RegularExpressionValidator>
                                  </h3>
                                 
                             
@@ -43,9 +48,10 @@
                              <h3 class="right">
                                  <asp:TextBox ID="TextBoxTel" runat="server"></asp:TextBox>
                                  
-                                    <asp:Label ID="LabelReqFieldTel" runat="server" ForeColor="Red" ></asp:Label>
+                                   <%-- <asp:Label ID="LabelReqFieldTel" runat="server" ForeColor="Red" ></asp:Label>--%>
+                                 <asp:RequiredFieldValidator ID="RequiredFieldValidatorTel" ControlToValidate="textBoxTel" runat="server" Text="*" ErrorMessage="RequiredFieldValidator"  ForeColor="Red" Display="Dynamic"></asp:RequiredFieldValidator>
+                                 <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBoxTel" Display="Dynamic" ErrorMessage="RegularExpressionValidator" ForeColor="Red" ValidationExpression="\d*">*</asp:RegularExpressionValidator>
                                  </h3>
-                               
                                <h3 class="left">
                                    <asp:Button ID="ButtonVolgende" runat="server" Text="Volgende" OnClick="ButtonVolgende_Click" />
                                </h3>

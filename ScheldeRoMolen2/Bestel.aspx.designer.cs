@@ -58,13 +58,13 @@ namespace ScheldeRoMolen2 {
         protected global::System.Web.UI.WebControls.TextBox TextBoxNaam;
         
         /// <summary>
-        /// LabelReqFieldNaam control.
+        /// RequiredFieldValidatorNaam control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelReqFieldNaam;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorNaam;
         
         /// <summary>
         /// TextBoxEmail control.
@@ -76,13 +76,22 @@ namespace ScheldeRoMolen2 {
         protected global::System.Web.UI.WebControls.TextBox TextBoxEmail;
         
         /// <summary>
-        /// LabelReqFieldEmail control.
+        /// RequiredFieldValidator2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelReqFieldEmail;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        
+        /// <summary>
+        /// RegularExpressionValidatorEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidatorEmail;
         
         /// <summary>
         /// TextBoxTel control.
@@ -94,13 +103,22 @@ namespace ScheldeRoMolen2 {
         protected global::System.Web.UI.WebControls.TextBox TextBoxTel;
         
         /// <summary>
-        /// LabelReqFieldTel control.
+        /// RequiredFieldValidatorTel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelReqFieldTel;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorTel;
+        
+        /// <summary>
+        /// RegularExpressionValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
         
         /// <summary>
         /// ButtonVolgende control.
