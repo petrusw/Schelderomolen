@@ -14,6 +14,8 @@
                 <br />
                 <h3 class="center"  >
                     Email: <asp:TextBox ID="TextBoxContactEmail" runat="server" Width="65%"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidatoremail" runat="server" ControlToValidate="TextBoxContactEmail" ErrorMessage="RequiredFieldValidator" ForeColor="Red" Display="Dynamic">*</asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBoxContactEmail" Display="Dynamic" ErrorMessage="RegularExpressionValidator" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*">*</asp:RegularExpressionValidator>
                     <br /></h3>
                     <asp:TextBox ID="TextBoxContactForm" runat="server" Width="100%" Height="100%" TextMode="MultiLine" Rows="20"></asp:TextBox>
                 

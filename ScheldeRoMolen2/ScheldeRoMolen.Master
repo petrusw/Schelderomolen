@@ -16,7 +16,9 @@
 <body>
     <form id="form1" runat="server">
          <div >
+             
            <section id="topBar">
+                           
                 <asp:HyperLink CssClass="button" ID="HyperLinkHome" runat="server" NavigateUrl="~/Default.aspx" ForeColor="White" Width="15%" Height="100%">Home</asp:HyperLink>
                <asp:HyperLink  CssClass="button" ID="HyperLinkBestel" runat="server" Text="Bestel"   Width="15%" Height="100%" NavigateUrl="~/Bestel.aspx" ForeColor="White" >
                    <%--<h3 class="topBarButton" >Bestel</h3>--%>
@@ -25,7 +27,10 @@
           <%-- <asp:HyperLink CssClass="button" ID="HyperLink2" runat="server"  Width="15%" Height="100%" NavigateUrl="~/index.aspx" ForeColor="White" >knop4</asp:HyperLink>
                 <asp:HyperLink CssClass="button" ID="HyperLink3" runat="server"  Width="15%" Height="100%" NavigateUrl="~/index.aspx" ForeColor="White" >knop5</asp:HyperLink>
                 --%></section>
-           
+             <section id="logo">
+                <asp:Image ID="ImageGroeneMolen" CssClass="center" runat="server" ImageUrl="~/images/logo-groen.png" BackColor="White" BorderStyle="None" BorderColor="#4CFF00" BorderWidth="2px"       />
+
+             </section>
        </div>
          <section id="pictureMain">
         

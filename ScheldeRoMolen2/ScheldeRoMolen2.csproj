@@ -69,6 +69,7 @@
     <Content Include="Default.aspx" />
     <Content Include="content\MeelSoorten.xml" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="images\logo-groen.png" />
     <Content Include="ScheldeRoMolen.Master" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
