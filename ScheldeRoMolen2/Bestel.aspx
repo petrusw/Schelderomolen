@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="index" runat="server">
+<asp:Content ID="Content3"  ContentPlaceHolderID="index" runat="server">
      <section class="inline">
             <asp:ScriptManager ID="ScriptManager1" runat="server">
 
@@ -17,7 +17,7 @@
                               <h2 >Uw bestelling voor : <asp:Label  ID="LabelDatumAfhaling" runat="server" ></asp:Label></h2>
                              
                          </section>
-                         <section class="center">
+                         <section class="center" id="main">
                              
                                  <h3 class="left">Afgehaald door : </h3>
                              <h3 class="right">
@@ -117,4 +117,5 @@
            </section>
            
         </section>
+    <div class="spacer" ></div>
 </asp:Content>
