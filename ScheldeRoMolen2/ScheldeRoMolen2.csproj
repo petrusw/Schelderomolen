@@ -70,6 +70,7 @@
     <Content Include="content\MeelSoorten.xml" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\logo-groen.png" />
+    <Content Include="favicon.png" />
     <Content Include="ScheldeRoMolen.Master" />
     <Content Include="packages.config" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -98,7 +99,9 @@
     <Content Include="images\schelderomolen.jpg" />
     <Content Include="scripts\npm.js" />
     <Content Include="scripts\scriptMain.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bestel.aspx.cs">
