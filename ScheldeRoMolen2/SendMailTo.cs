@@ -20,9 +20,9 @@ namespace ScheldeRoMolen2
             MailMessage mail = new MailMessage();
             //mail.To.Add(MailToMe);
             mail.To.Add(EmailAdress);
-            mail.CC.Add("petrus.ward@gmail.com");
+            mail.CC.Add(MailToMe);
             mail.From = new MailAddress("Noreply@scheldemolen.com");
-            mail.Subject = Subject + DateTime.Now.Date.ToShortDateString();
+            mail.Subject = Subject +" "+ DateTime.Now.Date.ToShortDateString();
             mail.Body = Text;
             mail.IsBodyHtml = true;
             SmtpClient smtp = new SmtpClient();
@@ -42,7 +42,7 @@ namespace ScheldeRoMolen2
         public string MailToMe
         {
             get { return mailtoMeValue; }
-            set { mailtoMeValue = "petrus.ward@gmail.com"; }
+            set { mailtoMeValue = value; }
         }
 
 
@@ -58,6 +58,7 @@ namespace ScheldeRoMolen2
             EmailAdress = emailAdress;
             Subject = subject;
             Text = text;
+            MailToMe = "petrus.ward@gmail.com";
         }
     }
 }
