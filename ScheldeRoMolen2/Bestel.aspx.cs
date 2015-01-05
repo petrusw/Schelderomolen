@@ -149,8 +149,8 @@ namespace ScheldeRoMolen2
             PanelType.Visible = false;
             LabeleindeBestelling.Visible = true;
             LabeleindeBestelling.Text = "Bedankt voor uw bestelling! ";
-          
-            SendMailTo NieuweEmail = new SendMailTo(TextBoxEmail.Text, bericht);
+
+            SendMailTo NieuweEmail = new SendMailTo(TextBoxEmail.Text, bericht, "Uw bestelling bij Schelderomolen op");
 
             NieuweEmail.Send();
         }

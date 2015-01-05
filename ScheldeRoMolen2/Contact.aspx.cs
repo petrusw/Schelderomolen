@@ -23,7 +23,7 @@ namespace ScheldeRoMolen2
             string multiLineText = TextBoxContactForm.Text.Replace(Environment.NewLine, "<br/>"); 
             // Geeft de e-mail weer inplaats van deze te verzenden 
             LabelContactPreview.Text = "Email: " + TextBoxContactEmail.Text +"<br/>"+"Uw bericht: "+"<br/>"+ multiLineText;
-            SendMailTo newMail = new SendMailTo(TextBoxContactEmail.Text, LabelContactPreview.Text);
+            SendMailTo newMail = new SendMailTo(TextBoxContactEmail.Text, LabelContactPreview.Text,"Contact");
             newMail.Send();
         }
     }

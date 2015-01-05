@@ -14,7 +14,7 @@ namespace ScheldeRoMolen2
         private string emailAdressValue;
         private string textValue;
         private string mailtoMeValue;
-        
+        private string Subject;
         public void Send()
         {
             MailMessage mail = new MailMessage();
@@ -22,7 +22,7 @@ namespace ScheldeRoMolen2
             mail.To.Add(EmailAdress);
             mail.CC.Add("petrus.ward@gmail.com");
             mail.From = new MailAddress("Noreply@scheldemolen.com");
-            mail.Subject = "Uw bestelling bij Schelderomolen op "+ DateTime.Now.Date.ToShortDateString();
+            mail.Subject = Subject + DateTime.Now.Date.ToShortDateString();
             mail.Body = Text;
             mail.IsBodyHtml = true;
             SmtpClient smtp = new SmtpClient();
@@ -53,10 +53,10 @@ namespace ScheldeRoMolen2
             set { emailAdressValue = value; }
         }
         public SendMailTo() { }
-        public SendMailTo(string emailAdress,string text)
+        public SendMailTo(string emailAdress,string text,string subject)
         {
             EmailAdress = emailAdress;
-            
+            Subject = subject;
             Text = text;
         }
     }
