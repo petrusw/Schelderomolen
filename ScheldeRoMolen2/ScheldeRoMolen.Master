@@ -19,7 +19,7 @@
              
            <section id="topBar">
                            
-                <asp:HyperLink CssClass="button" ID="HyperLinkHome" runat="server" NavigateUrl="~/Default.aspx" ForeColor="White" Width="15%" Height="100%">Home</asp:HyperLink>
+                <asp:HyperLink CssClass="button" ID="HyperLinkHome" runat="server" NavigateUrl="~/Default.aspx" ForeColor="White" Width="15%" Height="100%">Nieuws</asp:HyperLink>
                <asp:HyperLink  CssClass="button" ID="HyperLinkBestel" runat="server" Text="Bestel"   Width="15%" Height="100%" NavigateUrl="~/Bestel.aspx" ForeColor="White" >
                   
                </asp:HyperLink>

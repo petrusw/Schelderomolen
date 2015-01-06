@@ -77,10 +77,12 @@
     <Content Include="content\bootstrap.css" />
     <Content Include="content\bootstrap.min.css" />
     <Content Include="content\ContactInfo.txt" />
+    <Content Include="content\eerherstel.txt" />
     <Content Include="content\indexText.txt" />
     <Content Include="content\Textgewicht.txt" />
     <Content Include="Default.aspx" />
     <Content Include="content\MeelSoorten.xml" />
+    <Content Include="Eerherstel.aspx" />
     <Content Include="Error.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="images\logo-groen.png" />
@@ -93,6 +95,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="content\bootstrap-theme.css.map" />
     <Content Include="content\bootstrap.css.map" />
+    <Content Include="WieZijnWij.aspx" />
     <None Include="Properties\PublishProfiles\scheldemolen - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\scheldemolen - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\scheldemolen.pubxml" />
@@ -148,6 +151,13 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Eerherstel.aspx.cs">
+      <DependentUpon>Eerherstel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Eerherstel.aspx.designer.cs">
+      <DependentUpon>Eerherstel.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Error.aspx.cs">
       <DependentUpon>Error.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -172,6 +182,13 @@
       <DependentUpon>ScheldeRoMolen.Master</DependentUpon>
     </Compile>
     <Compile Include="SendMailTo.cs" />
+    <Compile Include="WieZijnWij.aspx.cs">
+      <DependentUpon>WieZijnWij.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WieZijnWij.aspx.designer.cs">
+      <DependentUpon>WieZijnWij.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup />
   <PropertyGroup>
