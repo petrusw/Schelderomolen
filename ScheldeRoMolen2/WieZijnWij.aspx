@@ -12,7 +12,16 @@
         <div class="MainText">
             <asp:HyperLink ID="HyperLinkBack" runat="server" NavigateUrl="~/Default.aspx"><< Terug</asp:HyperLink>
         <h3 id="indexText"  runat="server" ></h3>
+             <asp:HyperLink ID="HyperLinkBack2" runat="server" NavigateUrl="~/Default.aspx"><< Terug</asp:HyperLink>
+            <br />
+            <br />
 
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </section>
 </asp:Content>

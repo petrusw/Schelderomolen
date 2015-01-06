@@ -15,7 +15,7 @@ namespace ScheldeRoMolen2
         protected void Page_Load(object sender, EventArgs e)
         {
             Read("~/content/indexText.txt");
-            indexText.InnerHtml = content /*+"<br/>"+"<br/>"+"<br/>"*/;
+            indexText.InnerHtml = content ;
             content = " ";
             Read("~/content/eerherstel.txt");
             eertext.InnerHtml = content;

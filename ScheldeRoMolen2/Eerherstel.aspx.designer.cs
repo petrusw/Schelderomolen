@@ -10,7 +10,7 @@
 namespace ScheldeRoMolen2 {
     
     
-    public partial class WieZijnWij {
+    public partial class Eerherstel {
         
         /// <summary>
         /// HyperLinkBack control.
@@ -22,13 +22,13 @@ namespace ScheldeRoMolen2 {
         protected global::System.Web.UI.WebControls.HyperLink HyperLinkBack;
         
         /// <summary>
-        /// indexText control.
+        /// eerherstelText control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl indexText;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl eerherstelText;
         
         /// <summary>
         /// HyperLinkBack2 control.
