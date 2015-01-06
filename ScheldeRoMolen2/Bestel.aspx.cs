@@ -40,7 +40,7 @@ namespace ScheldeRoMolen2
         private void readXml()
         {
             string st = "";
-          using (XmlReader reader = XmlReader.Create(Server.MapPath("~/content/MeelSoorten.xml")))
+            using (XmlReader reader = XmlReader.Create(Server.MapPath("~/content/MeelSoorten.xml")))// server.mappath is nodig voor de juiste relative link te leggen naar de file!!!
           {
               while(reader.Read())
               {
