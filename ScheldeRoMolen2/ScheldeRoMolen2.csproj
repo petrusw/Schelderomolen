@@ -79,6 +79,7 @@
     <Content Include="content\ContactInfo.txt" />
     <Content Include="content\eerherstel.txt" />
     <Content Include="content\indexText.txt" />
+    <Content Include="content\remove_this_after_test.txt" />
     <Content Include="content\Textgewicht.txt" />
     <Content Include="Default.aspx" />
     <Content Include="content\MeelSoorten.xml" />
